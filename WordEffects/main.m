@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
             // Convert char array into an NSString object
             NSString *inputString = [NSString stringWithUTF8String:inputChars];
             
-            // remove \n from inputstring which was inserted by hitting enter after input
+            // remove \n from inputString which was inserted by hitting enter after input
             inputString = [inputString substringToIndex:([inputString length]-1)];
             
             NSLog(@"%@", inputString);
